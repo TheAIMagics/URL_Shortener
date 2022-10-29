@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL SHORTENER</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+    <div class="box">
+        <h1>Enter an https:// URL:</h1>
+        <form action="#", method="post">
+            <input type="url" name="name" id="url"
+            placeholder="https://example.com"
+            pattern="https://.*" 
+            required>
+        
+         <input type="submit" value="submit">
+        </form>
+    </div> 
+</body>
+<script>
+    window.onload = function() {
+  document.getElementById('url').value = '';
+  }
+</script>
+</html>
+
+
+
+

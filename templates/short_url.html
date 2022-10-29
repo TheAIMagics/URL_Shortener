@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block title %}Short URL{% endblock %}
+
+{% block content %}
+<br>
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        <h4>Generated Short URL = http://127.0.0.1:5000/{{short_url_display}}</h4>
+    </div>
+</div>
+   
+    
+    
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Short</th>
+            <th scope="col">Long</th>
+            <th scope="col">Generated Short URL</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for url in vals %}
+            <tr>
+                <td>{{url.id_}}</td>
+                <td><strong>{{url.short}}</strong> </td>
+                <td><strong>{{url.long}}</strong> </td>
+                <td><strong>{{url.path}}</strong>
+                    <a type="button" href ="http://127.0.0.1:5000/{{short_url_display}}" class="btn btn-primary">Check Path</a>
+                </td>
+            </tr>
+            {% endfor %}
+
+    
+      
+    
+{% endblock %}
