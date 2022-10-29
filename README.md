@@ -15,7 +15,9 @@ Application url : [URL_Shortner](https://ineuronurl.herokuapp.com/)
 
 
 
-![Screenshot](snippet.png)
+![Screenshot](snippets/1.png)
+![Screenshot](snippets/2.png)
+![Screenshot](snippets/3.png)
 
  ## 💻 How to setup:
 
