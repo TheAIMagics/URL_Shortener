@@ -59,7 +59,7 @@ def home():
             else:
                 # create short_url
                 short_url = shorten_url()
-                generated_path = "http://127.0.0.1:5000/"+short_url
+                generated_path = "https://ineuronurl.herokuapp.com/"+short_url
                 new_url = Urls(url_received, short_url,path=generated_path)
                 db.session.add(new_url)
                 db.session.commit()

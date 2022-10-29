@@ -2,16 +2,13 @@
 {% block title %}Short URL{% endblock %}
 
 {% block content %}
+
 <br>
 <div class="container">
     <div class="alert alert-success" role="alert">
-        <h4>Generated Short URL = http://127.0.0.1:5000/{{short_url_display}}</h4>
+        <h4>Generated Short URL = https://ineuronurl.herokuapp.com/{{short_url_display}}</h4>
     </div>
 </div>
-   
-    
-    
-
     <table class="table table-striped">
         <thead>
           <tr>
@@ -28,12 +25,9 @@
                 <td><strong>{{url.short}}</strong> </td>
                 <td><strong>{{url.long}}</strong> </td>
                 <td><strong>{{url.path}}</strong>
-                    <a type="button" href ="http://127.0.0.1:5000/{{short_url_display}}" class="btn btn-primary">Check Path</a>
+                    <a type="button" href ="https://ineuronurl.herokuapp.com/{{short_url_display}}" class="btn btn-primary">Check Path</a>
                 </td>
             </tr>
             {% endfor %}
 
-    
-      
-    
 {% endblock %}
